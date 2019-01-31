@@ -1,0 +1,448 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+    width: 100%;
+    max-width: 1920px;
+	font-size:0.9em;
+	color:#5a3921;
+    background-image: url("../images/static.jpg");
+	background-color:#7bc67b;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+	align: center;
+	border: 3px solid #5a3921;
+	color:#ffffb5;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-shadow: 5px 3px 4px gray;
+}
+
+a img{
+	border:none;
+    height: auto;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+p a, p a:visited {
+    border: none;
+}
+
+/* Headings: */
+
+h1,h2,h3, h1 a, h1 a:visited {
+	font-family: 'VT323', monospace;
+    color: #ffffb5;
+	text-shadow:0 1px 1px black;
+    border: none;
+}
+
+h1{
+	/* The logo text */
+	font-size:4em;
+	padding:0.5em 0 0;
+	text-transform:uppercase;
+    text-align: center;
+}
+
+h3{
+	/* The slogan text */
+	font-family: 'VT323', monospace;
+	font-size:2.5em;
+	font-style: italic;
+    letter-spacing: 3px;
+	margin:0 0 1em;
+}
+
+h2{
+	font-size:2.5em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+.go_up {
+	float: right; 
+	padding-right: 15px;  
+    color: #ffffb5;
+}
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+}
+.pbold{
+	font-size:1.2em;
+	font-weight:bold;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+
+.line{
+	/* The dividing line: */
+	height:1px;
+	background-color:#5a3921;
+	border-bottom:1px solid #5a3921;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+article .line{
+	/* The dividing line inside of the article is darker: */
+	background-color:#5a3921;
+	border-bottom-color:#5a3921;
+	margin:1.3em 0;
+}
+
+footer .line{
+	margin:2em 0;
+}
+
+/* Styles for the table */
+#collection {
+    background-color: #953A39;
+}
+
+table {
+    width: 40%;
+    height: auto;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #FF8584;
+}
+
+thead tr:nth-child(even) {
+    color: #008402;
+}
+
+thead {
+    color: #7CFE2F;
+}
+
+tbody {
+    color: black;
+}
+
+tfoot {
+    color: #0000FE;
+    background-color: #FF8584;
+}
+
+th, td {
+    width: 30%;
+    height: auto;
+    text-align: center;
+    padding: 5%;
+}
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: auto;
+}
+
+/* The navigation styling: */
+nav{
+	background:#6b8c42;
+	padding:0 0.2604%;
+	position:relative;
+	right:0;
+	top:1em;
+	border:1px solid #5a3921;
+    text-align: center;
+    z-index: 9999;
+    
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+}
+
+.sidebar {
+    top: 40%;
+    left: 0;
+    width: 20%;
+    position:fixed;
+    margin-left: 2.0833%;
+}
+
+#hamburger {
+    visibility: hidden;
+}
+
+nav ul li{
+	display:block;
+    background-color:#6b8c42;
+    position: relative;
+}
+
+nav ul li a,
+nav ul li a:visited{
+	color:#ffffb5;
+	display:block;
+	float:none;
+	font-size:1.25em;
+	font-weight:bold;
+	margin:0.1041% 0.1041%;
+	padding:0.3645% 0.5208% 0.2083%;
+	text-shadow:0 1px 1px white;
+	text-transform:uppercase;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:#7bc67b;
+}
+
+ul li ul {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 100%;
+}
+
+ul li ul li {
+    float:inherit;
+}
+
+ul li:hover ul{
+    display:block;
+}
+
+nav, article, nav ul li a,figure{
+	/* Applying CSS3 rounded corners: */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+.hiddenlink {
+    border: none;
+    font-size: 1em;
+}
+
+/* Article styles: */
+
+.page{
+	width:80%;
+	margin:0 auto;
+	position:relative;
+}
+
+.row {
+    display: flex;
+}
+
+.twoColumns {
+    column-count: 2;
+}
+
+.threeColumns {
+    column-count: 3;
+}
+
+#articles, header {
+    padding-left: 20%;
+    text-align: center;
+}
+
+article{
+	background-color:#6b8c42;
+	margin:3em 0;
+	padding:1.6276%;
+	text-shadow:0 1px 1px;
+    text-align:left;
+}
+
+figure{
+	border:3px solid #5a3921;
+	float:right;
+	height:auto;
+    max-height: 250px;
+	margin:0.7812%;
+	overflow:hidden;
+	width:50%;
+    break-inside: avoid;
+}
+
+figure:hover{
+	-moz-box-shadow:0 0 2px #4D7788;
+	-webkit-box-shadow:0 0 2px #4D7788;
+	box-shadow:0 0 2px #4D7788;
+}
+
+#gateway source {
+    width: 30%;
+    margin: auto;
+}
+
+#gateway img {
+    width: 50%;
+    margin: auto;
+}
+
+.columnfill {
+    height: auto;
+    width: 90%;
+    float: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.signature  {
+    float: right;
+    color: #ffffb5;
+    font-size: 1.125em;
+}
+
+/* Footer styling: */
+
+footer{
+	margin-bottom:30px;
+	text-align:center;
+	font-size:0.825em;
+}
+
+footer p{
+	margin-bottom:2.5em;
+	position:relative;
+}
+
+#buriedtreasure {
+    background-color:#6b8c42;
+    color: #6b8c42;
+	display:block;
+	padding:0.005% 0.2083%;
+	z-index:998;
+	position:relative;
+    border: 3px solid #5a3921;
+}
+
+#buriedtreasure:hover {
+    background-color:#5a3921;
+    color: #ffffb5;
+}
+
+footer a,footer a:visited{
+	color:#ffffb5;
+	padding:0.005% 0.2083%;
+	z-index:100;
+	position:relative;
+    border: none;
+    z-index: 999;
+}
+
+footer a:hover {
+	text-decoration:none;
+    font-weight: bold;
+}
+
+footer a.by{
+	float:left;
+
+}
+
+footer a.up{
+	float:right;
+}
+
+#copyright {
+    margin:auto;
+    color: #ffffb5;
+}
+
+/*animations*/
+.walkLane {
+    display: inline-block;
+    width: 100%;
+    height: 36px;
+    position: relative;
+    overflow: hidden;
+}
+
+#walkingfox, #singingfrog, #flyingowl {
+    display: inline-block;
+    margin: 0.7812%;
+}
+
+#walkingfox {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    -webkit-transition: left 0.5s ease-out 0s; 
+}
+
+#walkLeft, #walkRight {
+    display: inline-block;
+    position: relative;
+}
+
+#walkLeft:hover, #walkRight:hover {
+    cursor:pointer;
+}
+
+/*Media queries */
+@media only screen and (max-width: 480px) {
+    #articles {
+        padding-left: auto;
+    }
+    
+    .twoColumns, .threeColumns {
+        column-count: 1;
+    }
+    
+    #hamburger {
+        visibility: visible;
+    }
+    
+    #menu {
+        visibility: hidden;
+    }
+    
+    .sidebar {
+        height: 2em;
+        top: 10%;
+    }
+    
+    nav:hover #menu {
+        visibility: visible;
+    }
+    
+    nav:hover {
+        height: auto;
+        width: 40%;
+    }
+}

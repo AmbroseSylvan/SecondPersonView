@@ -1,0 +1,14 @@
+Version 1.0
+    Submitted to eConestoga for marking. Assignment 1 for PROG1245.
+    
+Version 1.1
+    Added the fortuneteller.html page and its fortuneteller.js file. 
+    
+Version 1.2
+    Added buttons to index.html that move fox left and right. 
+
+Version 1.3
+    Converting to PHP files. Creating templates for header, footer, and sidebar. 
+    
+Version 2.0
+    Added collection.php and gate.php pages. Added responsive design to whole site. Gate.php contains an image that changes source based on the viewport size. Collection.php contains a table for a game collection. Added two-tier navigation menu. 
